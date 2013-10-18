@@ -23,7 +23,10 @@ void draw() {
             //color c
  //getTransparentColor( img.get( mouseX, mouseY ), 64 );
 color c = getTransparentColor( img.get( mouseX, mouseY ), 64 );
+//fill the values
+fill(c);
 
+ellipse(mouseX,mouseY,r*2,r*2);
 }
 
 int adding(int x, int y) {
