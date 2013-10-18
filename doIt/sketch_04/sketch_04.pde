@@ -1,6 +1,8 @@
-int xpos = 0;
-int ypos = 0;
-int xspeed = 3;
+int radius = 40;
+int xpos = radius/2;
+int ypos = radius/2;
+int xstep = 3;
+int ystep = 2;
 
 void setup(){
   size(400,400);
@@ -11,11 +13,17 @@ void setup(){
 void draw(){
   background(255);
   //xpos = xpos + 1;
-  xpos +=xspeed;
+  xpos +=xstep;
+  ypos +=ystep;
   println(xpos);
-  ellipse(xpos,ypos,20,20);
+  ellipse(xpos,ypos,radius,radius);
   
-  if(xpos>=width || xpos<=0.0){
-    xspeed *= -1;
+  if(xpos >= width-(radius/2)|| xpos<=radius/2){
+    xstep *=-1;
+    println(xpos);
+  }
+  
+  if(ypos>=height-(radius/2) || ypos<=radius/2){
+    ystep *=-1;
   }
 }
