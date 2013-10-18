@@ -23,6 +23,19 @@ void draw() {
   fill(c);
 
   ellipse(mouseX, mouseY, r*2, r*2);
+  
+  if(grow){
+    r++;
+    if(r>maxRadius){
+     grow=false; 
+    }
+  }
+  else{
+   r--; 
+   if(r<minRadius){
+    grow=true; 
+   }
+  }
 }
 
 color getTransparentColor(color c, float a) {
