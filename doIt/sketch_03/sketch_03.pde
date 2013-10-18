@@ -7,6 +7,7 @@ float maxRadius = 20;
 boolean grow = false;
 
 void setup() {
+  //frameRate(10);
   size(450, 400);
   background(255);
   img = loadImage("myPicture.jpeg");
@@ -15,6 +16,7 @@ void setup() {
 }
 
 void draw() {
+  //background(255);
   smooth();
   int x = 10;
   int y = 20;
