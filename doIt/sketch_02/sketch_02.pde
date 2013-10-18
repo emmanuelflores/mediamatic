@@ -37,5 +37,13 @@ void draw(){
     stroke(random(255));
 
   }
+  else{
+    strokeCap(ROUND);
+    strokeWeight(1);
+    stroke(255,150);
+  }
+  
+  x = sin(a * radians(angle) + PI / 2) * 280;
+  y = sin(b * radians(angle)) * 180;
   
 }
