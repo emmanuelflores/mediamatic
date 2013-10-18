@@ -18,19 +18,11 @@ void draw() {
   smooth();
   int x = 10;
   int y = 20;
-  //println(x+y);
-  //println(adding(30,100));
-            //color c
- //getTransparentColor( img.get( mouseX, mouseY ), 64 );
-color c = getTransparentColor( img.get( mouseX, mouseY ), 64 );
-//fill the values
-fill(c);
+  color c = getTransparentColor( img.get( mouseX, mouseY ), 64 );
+  //fill the values
+  fill(c);
 
-ellipse(mouseX,mouseY,r*2,r*2);
-}
-
-int adding(int x, int y) {
-  return x+y;
+  ellipse(mouseX, mouseY, r*2, r*2);
 }
 
 color getTransparentColor(color c, float a) {
