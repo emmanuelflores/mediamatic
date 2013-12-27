@@ -1,6 +1,7 @@
 //Next: make a pie chart class
 //Next: smooth the transitions with interpolations
 //Next: take care of the transitions
+//Next: streams to each one of the slots of the pie chart
 Table food_democracy_table;
 ArrayList<Integer> sushi_likers = new ArrayList<Integer>();
 ArrayList<Integer> salad_likers = new ArrayList<Integer>();
