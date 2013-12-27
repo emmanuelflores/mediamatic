@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<cities>
+	<city>
+		<name>Shanghai</name>
+		<!-- <coordinates n="31.12f" e="121.30f"/>  -->
+		<coordinates n="100" e="30"/> 
+		<pop>23710000</pop>
+	</city>
+	
+	<city>
+		<name>Tokyo</name>
+		<!-- <coordinates n="35.41f" e="139.40f"/>  -->
+		<coordinates n="31" e="321"/> 
+		<pop>35682460</pop>
+	</city>
+	
+	<city>
+		<name>Seoul</name>
+		<!-- <coordinates n="37.33f" e="126.58f"/>  -->
+		<coordinates n="200" e="200"/> 
+		<pop>25620000</pop>
+	</city>
+	
+	<city>
+		<name>Trieste</name>
+		<!-- <coordinates n="37.33f" e="126.58f"/>  -->
+		<coordinates n="300" e="300"/> 
+		<pop>1000</pop>
+	</city>
+	
+	<city>
+		<name>Biggie</name>
+		<!-- <coordinates n="37.33f" e="126.58f"/>  -->
+		<coordinates n="400" e="300"/> 
+		<pop>55620000</pop>
+	</city>
+	
+</cities>
