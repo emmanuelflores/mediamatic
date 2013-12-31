@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<cities>
+	<city>
+		<name>Shanghai</name>
+		<!-- <coordinates n="31.12f" e="121.30f"/>  -->
+		<coordinates n="508" e="230"/> 
+		<pop>23710000</pop>
+	</city>
+	
+	<city>
+		<name>Beijing</name>
+		<!-- <coordinates n="31.12f" e="121.30f"/>  -->
+		<coordinates n="466" e="166"/> 
+		<pop>37100000</pop>
+	</city>
+	
+	<city>
+		<name>Tokyo</name>
+		<!-- <coordinates n="35.41f" e="139.40f"/>  -->
+		<coordinates n="611" e="178"/> 
+		<pop>35682460</pop>
+	</city>
+	
+	<city>
+		<name>Seoul</name>
+		<!-- <coordinates n="37.33f" e="126.58f"/>  -->
+		<coordinates n="534" e="176"/> 
+		<pop>25620000</pop>
+	</city>
+	
+	<city>
+		<name>Taipei</name>
+		<!-- <coordinates n="37.33f" e="126.58f"/>  -->
+		<coordinates n="524" e="270"/> 
+		<pop>1000</pop>
+	</city>
+	
+	<city>
+		<name>Delhi</name>
+		<!-- <coordinates n="37.33f" e="126.58f"/>  -->
+		<coordinates n="234" e="253"/> 
+		<pop>55620000</pop>
+	</city>
+	
+	<city>
+		<name>Teheran</name>
+		<!-- <coordinates n="37.33f" e="126.58f"/>  -->
+		<coordinates n="72" e="193"/> 
+		<pop>4000000</pop>
+	</city>
+	
+</cities>
