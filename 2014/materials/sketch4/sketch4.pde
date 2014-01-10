@@ -18,6 +18,13 @@ class Jumpy {
     xpos +=xstep;
     ypos +=ystep;
     ellipse(xpos, ypos, radius, radius);
+    if (xpos >= width-(radius/2)|| xpos<=radius/2) {
+      xstep *=-1;
+    }
+
+    if (ypos>=height-(radius/2) || ypos<=radius/2) {
+      ystep *=-1;
+    }
   }
   
 }
@@ -27,7 +34,7 @@ void setup() {
   background(255);
   size(400, 400);
   frameRate(20);
-  mJumpy = new Jumpy(10, 1, 1, 0);
+  mJumpy = new Jumpy(10, 10, 5, 0);
 }
 
 void draw() {
