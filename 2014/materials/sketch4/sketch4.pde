@@ -15,13 +15,15 @@ class Jumpy {
   }
 
   void drawCircle() {
-    println("lol");
+    xpos +=xstep;
+    ypos +=ystep;
     ellipse(xpos,ypos,radius,radius);
   }
 }
 
 void setup() {
   background(255);
+  size(400,400);
   Jumpy mJumpy = new Jumpy(10,5,5,0);
   mJumpy.drawCircle();
 }
