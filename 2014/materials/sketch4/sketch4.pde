@@ -14,8 +14,10 @@ class Jumpy {
   }
 
   void drawCircle() {
+    
     xpos +=xstep;
     ypos +=ystep;
+    stroke(1,100,100);
     ellipse(xpos, ypos, radius, radius);
     if (xpos >= width-(radius/2)|| xpos<=radius/2) {
       xstep *=-1;
