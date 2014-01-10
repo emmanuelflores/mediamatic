@@ -13,14 +13,23 @@ class Person {
   String giveMeYourName() {
     return name;
   }
-  
-  void sayYeah(){
-   println("yeahhhhhhhhhhhhhh!!"); 
+
+  void sayYeah() {
+    println("yeahhhhhhhhhhhhhh!!");
+  }
+
+  void sayUpa() {
+    println("uppppppppa ajax");
   }
 }
 
 
-void setup(){
-  
+void setup() {
+  Person peter = new Person("Peter", "cheese", 75);
+  peter.sayYeah();
+  peter.sayUpa();
+
+  Person xinxin = new Person("Xinxin", "spring rolls", 55);
+  println(xinxin.giveMeYourName());
 }
 
