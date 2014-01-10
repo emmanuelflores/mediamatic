@@ -6,12 +6,12 @@ int[] blue = {10,12,13};
 
 void setup() {
   size(500, 500);
+  smooth();
   background(100, 200, 200);
   index = 0;
 }
 
 void draw() {
-  
   noFill();
   ellipse(mouseX, mouseY, 20,20);
   
