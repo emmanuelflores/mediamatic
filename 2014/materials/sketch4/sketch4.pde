@@ -2,7 +2,6 @@ class Jumpy {
   int radius;
   int xpos, ypos;
   int xstep, ystep;
-
   Jumpy(int radius, int xstep, int ystep, int id) {
     this.radius = radius;
     this.xstep = xstep;
@@ -26,11 +25,21 @@ class Jumpy {
       ystep *=-1;
     }
   }
+  
+  void reset(){
+    xpos = width/2;
+    ypos = height/2;
+    printID();
+  }
+  
+  void printID(){
+   println("hello"); 
+  }
 }
 
 Jumpy mJumpy;
 //ArrayList
-int amount = 25;
+int amount = 105;
 ArrayList<Jumpy> circles = new ArrayList<Jumpy>();
 void setup() {
   background(255);
@@ -51,6 +60,12 @@ void draw() {
   //mJumpy.drawCircle();
   for(int i=0;i<amount;i++){
     circles.get(i).drawCircle();
+  }
+}
+
+void mousePressed(){
+  for(int i=0;i<amount;i++){
+    circles.get(i).reset();
   }
 }
 
