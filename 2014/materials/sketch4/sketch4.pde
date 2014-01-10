@@ -26,19 +26,28 @@ class Jumpy {
       ystep *=-1;
     }
   }
-  
 }
 
 Jumpy mJumpy;
+//ArrayList
+int amount = 25;
+ArrayList<Jumpy> circles = new ArrayList<Jumpy>();
 void setup() {
   background(255);
   size(400, 400);
   frameRate(20);
-  mJumpy = new Jumpy(10, 10, 5, 0);
+  //mJumpy = new Jumpy(10, 10, 5, 0);
+  
+  for(int i=0;i<amount;i++){
+    int radius = (int)random(10,40);
+    int xstep = (int)random(1,8);
+    int ystep = (int)random(1,8);
+    circles.add(new Jumpy(radius,xstep,ystep,i));
+  }
 }
 
 void draw() {
   background(255);
-  mJumpy.drawCircle();
+  //mJumpy.drawCircle();
 }
 
