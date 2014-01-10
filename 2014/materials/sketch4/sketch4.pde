@@ -49,5 +49,8 @@ void setup() {
 void draw() {
   background(255);
   //mJumpy.drawCircle();
+  for(int i=0;i<amount;i++){
+    circles.get(i).drawCircle();
+  }
 }
 
