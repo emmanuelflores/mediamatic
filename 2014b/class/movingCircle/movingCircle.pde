@@ -5,9 +5,9 @@ class Jumpy {
   int ystep;
   int diam;
   //constructor
-  Jumpy(int xpos, int ypos, int xstep, int ystep, int diam) {
-    this.xpos = xpos;
-    this.ypos = ypos;
+  Jumpy(int xstep, int ystep, int diam) {
+    xpos = width/2;
+    ypos = height/2;
     this.xstep = xstep;
     this.ystep = ystep;
     this.diam = diam;
@@ -35,7 +35,7 @@ Jumpy mJumpy;
 
 void setup() {
   size(500,500);
-  mJumpy = new Jumpy(100,100,2,3,20);
+  mJumpy = new Jumpy(2,3,20);
 }
 
 void draw(){
