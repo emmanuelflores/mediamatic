@@ -31,15 +31,24 @@ class Jumpy {
   }
 }
 
-Jumpy mJumpy;
-
+int amount = 100;
+ArrayList<Jumpy> circles = new ArrayList<Jumpy>();
 void setup() {
   size(500,500);
-  mJumpy = new Jumpy(2,3,20);
+  frameRate(20);
+  for(int i=0;i<amount;i++){
+   int diam = (int)random(10,100); 
+   int xstep = (int)random(1,8);
+   int ystep = (int)random(1,8);
+   circles.add(new Jumpy(diam,xstep,ystep));
+  }
 }
 
 void draw(){
   background(255);
-  mJumpy.drawMe();
+  for(int i=0;i<amount;i++){
+   circles.get(i).drawMe();
+  }
+
 }
 
