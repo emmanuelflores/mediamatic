@@ -1,18 +1,19 @@
 class Jumpy {
-  int x;
-  int y;
+  int xpos;
+  int ypos;
+  int xstep;
+  int ystep;
   //constructor
-  Jumpy(int x, int y) {
-    this.x = x;
-    this.y = y;
+  Jumpy(int xpos, int ypos, int xstep, int ystep) {
+    this.xpos = xpos;
+    this.ypos = ypos;
+    this.xstep = xstep;
+    this.ystep = ystep;
   }
   
   void drawMe() {
-    int xstep = 1;
-    int ystep = 1;
-    x = x + xstep;
-    y = y + ystep;
-    ellipse(x, y, 20, 20);
+    xpos +=xstep;
+    ypos +=ystep;
   }
 }
 
